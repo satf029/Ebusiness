@@ -1,23 +1,26 @@
 
 /* Estilos del contenedor del encabezado */
+/* Estilos del contenedor del encabezado */
 header {
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 10px 20px;
     border-bottom: 1px solid #ccc;
-    background-color: white ;
+    background-color: white;
+    flex-wrap: wrap; /* Permitir el ajuste de elementos en pantallas pequeñas */
 }
 
 /* Logo */
 .logo {
     display: flex;
     align-items: center;
+    flex: 1; /* Permitir que el logo ocupe espacio */
 }
 
 .logo img {
     height: 80px; /* Tamaño del logo */
-    margin-right: 50px;
+    margin-right: 20px; /* Ajuste en el margen */
 }
 
 .logo h1 {
@@ -28,9 +31,10 @@ header {
 
 /* Estilos de navegación */
 nav {
-    flex: 1;
+    flex: 2; /* Permitir que la navegación ocupe más espacio */
     display: flex;
     justify-content: center;
+    margin: 10px 0; /* Margen para separación en pantallas pequeñas */
 }
 
 nav a {
@@ -51,6 +55,41 @@ nav a:hover {
     text-decoration: underline;
 }
 
+/* Estilos de íconos */
+.icons {
+    display: flex;
+    align-items: center;
+    flex: 1; /* Permitir que los íconos ocupen espacio */
+    justify-content: flex-end; /* Alinear íconos a la derecha */
+}
+
+.icons a {
+    margin: 0 10px;
+    color: #333;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column; /* Apilar elementos verticalmente */
+        align-items: flex-start; /* Alinear elementos al inicio */
+    }
+
+    .logo {
+        margin-bottom: 10px; /* Espacio entre el logo y la navegación */
+    }
+
+    nav {
+        justify-content: flex-start; /* Alinear navegación al inicio */
+        flex-wrap: wrap; /* Permitir que los enlaces se envuelvan */
+    }
+
+    nav a {
+        margin: 5px 10px; /* Ajuste de márgenes para pantallas pequeñas */
+    }
+}
 body {
     font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
     line-height: 1.6;
