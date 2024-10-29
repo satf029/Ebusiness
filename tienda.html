@@ -3,95 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Carrito de Compras - [Nombre de la Tienda]</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-            color: #333;
-        }
-
-        header {
-            background-color: #007bff;
-            color: white;
-            text-align: center;
-            padding: 1rem 0;
-        }
-
-        main {
-            max-width: 800px;
-            margin: 20px auto;
-            padding: 20px;
-            background: white;
-            border-radius: 5px;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-        }
-
-        h1 {
-            color: #007bff;
-        }
-
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            margin-bottom: 20px;
-        }
-
-        table, th, td {
-            border: 1px solid #ccc;
-        }
-
-        th, td {
-            padding: 10px;
-            text-align: left;
-        }
-
-        th {
-            background-color: #007bff;
-            color: white;
-        }
-
-        .total {
-            font-weight: bold;
-        }
-
-        .button {
-            padding: 10px;
-            background-color: #007bff;
-            color: white;
-            border: none;
-            border-radius: 4px;
-            cursor: pointer;
-            transition: background-color 0.3s;
-            text-align: center;
-            display: inline-block;
-            margin: 5px 0;
-        }
-
-        .button:hover {
-            background-color: #0056b3;
-        }
-
-        footer {
-            text-align: center;
-            padding: 10px;
-            background-color: #f4f4f4;
-            margin-top: 20px;
-            border-top: 1px solid #ccc;
-        }
-    </style>
+    <title>Criemoi</title>
+    <link rel="stylesheet" href="css/tienda.css">
 </head>
 <body>
     <header>
-        <h1>Carrito de Compras</h1>
+        <!-- Logo -->
+        <div class="logo">
+            <img src="images/logo.png" alt="Logo de la tienda"> <!-- Ruta del logo -->
+        </div>
+
+        <!-- Navegación principal -->
+        <nav>
+            <a href="index.html">Inicio</a>
+            <a href="nosotros.html">Nosotros</a>
+            <a href="productos.html">Productos</a>
+            <a href="tienda.html" class="active">Tienda</a>
+            <a href="contacto.html">Contacto</a>
+        </nav>
     </header>
+    <div class="carrito">
+        <h1>Carrito de Compras</h1>
+    </div>
 
     <main>
         <h2>Productos Seleccionados</h2>
         <table>
-            <thead>
+            <thead style="background-color: #a4c617;">
                 <tr>
                     <th>Producto</th>
                     <th>Cantidad</th>
@@ -136,7 +74,7 @@
     </main>
 
     <footer>
-        <p>&copy; [Año Actual] [Nombre de la Tienda]. Todos los derechos reservados.</p>
+        <p>&copy; 2024 criemoi. Todos los derechos reservados.</p>
     </footer>
 </body>
 </html>

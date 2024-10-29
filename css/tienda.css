@@ -1,6 +1,4 @@
 /* Estilos del contenedor del encabezado */
-
-/* Estilos del contenedor del encabezado */
 header {
     display: flex;
     align-items: center;
@@ -52,6 +50,35 @@ nav a:hover {
     text-decoration: underline;
 }
 
+/* Header */
+.carrito {
+    background: linear-gradient(135deg, #a1c61f 0%, #a4c617 100%);
+    color: white;
+    padding: 100px 20px;
+    text-align: center;
+    position: relative;
+    margin-bottom: 60px;
+}
+
+.carrito h1 {
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin: 0;
+    letter-spacing: -1px;
+    color : white;
+}
+
+.carrito::after {
+    content: '';
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 40px;
+    height: 4px;
+    background-color: #2b9348;
+    border-radius: 2px;
+}
 
 body {
     font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
@@ -63,79 +90,60 @@ body {
 main {
     max-width: 1000px;
     margin: 0 auto;
-    padding: 0 20px;
+    padding: 20px;
 }
 
-section {
-    background: white;
-    padding: 40px;
-    border-radius: 12px;
-    margin-bottom: 40px;
-    box-shadow: 0 2px 15px rgba(0,0,0,0.05);
-    transition: transform 0.3s ease;
-}
-
-section:hover {
-    transform: translateY(-5px);
+h1, h2 {
+    color: #2b2b2b;
+    margin-bottom: 20px;
 }
 
 h2 {
-    color: #2b2b2b;
-    font-size: 2rem;
-    margin-bottom: 20px;
-    position: relative;
+    font-size: 1.75rem;
 }
 
-h2::after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 60px;
-    height: 3px;
-    background-color: #2b9348;
-    border-radius: 2px;
+/* Estilos de la tabla */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 40px;
 }
 
-p {
-    color: #555;
-    margin-bottom: 20px;
-    font-size: 1.1rem;
+th, td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ccc;
 }
 
-/* Estilos para el formulario */
-form {
-    display: flex;
-    flex-direction: column;
+th {
+    background-color: #a4c617;
+    color: white;
 }
 
-label {
-    margin-bottom: 5px;
-    font-weight: bold;
-    color: #2b2b2b;
+tr:hover {
+    background-color: #f1f1f1; /* Color al pasar el mouse sobre la fila */
 }
 
-input, textarea {
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    margin-bottom: 20px;
-    font-size: 1rem;
-}
-
-button {
-    padding: 10px;
+/* Estilos para los botones */
+.button {
+    padding: 10px 15px;
     background-color: #a4c617;
     color: white;
     border: none;
     border-radius: 5px;
-    font-size: 1rem;
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
 
-button:hover {
+.button:hover {
     background-color: #1a7e3d;
+}
+
+/* Resumen de pago */
+.total {
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: #2b2b2b;
 }
 
 /* Footer */
@@ -157,45 +165,18 @@ footer p {
 /* Responsive design */
 @media (max-width: 768px) {
     header {
-        padding: 60px 20px;
+        padding: 20px;
     }
 
-    section {
-        padding: 30px 20px;
+    main {
+        padding: 10px;
     }
 
     h2 {
-        font-size: 1.75rem;
+        font-size: 1.5rem;
     }
 
-    p {
-        font-size: 1rem;
+    th, td {
+        padding: 10px;
     }
-}
-.contacto {
-    background: linear-gradient(135deg, #a1c61f 0%, #a4c617 100%);
-    color: white;
-    padding: 100px 20px;
-    text-align: center;
-    position: relative;
-    margin-bottom: 60px;
-}
-
-.contacto h1 {
-    font-size: 3.5rem;
-    font-weight: 700;
-    margin: 0;
-    letter-spacing: -1px;
-}
-
-.contacto::after {
-    content: '';
-    position: absolute;
-    bottom: -20px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 40px;
-    height: 4px;
-    background-color: #2b9348;
-    border-radius: 2px;
 }
