@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito de Compras - [Nombre de la Tienda]</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        header {
+            background-color: #007bff;
+            color: white;
+            text-align: center;
+            padding: 1rem 0;
+        }
+
+        main {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background: white;
+            border-radius: 5px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            color: #007bff;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+
+        table, th, td {
+            border: 1px solid #ccc;
+        }
+
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #007bff;
+            color: white;
+        }
+
+        .total {
+            font-weight: bold;
+        }
+
+        .button {
+            padding: 10px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            text-align: center;
+            display: inline-block;
+            margin: 5px 0;
+        }
+
+        .button:hover {
+            background-color: #0056b3;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #f4f4f4;
+            margin-top: 20px;
+            border-top: 1px solid #ccc;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Carrito de Compras</h1>
+    </header>
+
+    <main>
+        <h2>Productos Seleccionados</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Producto</th>
+                    <th>Cantidad</th>
+                    <th>Precio</th>
+                    <th>Acciones</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Producto 1</td>
+                    <td>
+                        <input type="number" value="1" min="1" style="width: 60px;">
+                    </td>
+                    <td>$20.00</td>
+                    <td>
+                        <button class="button">Eliminar</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Producto 2</td>
+                    <td>
+                        <input type="number" value="1" min="1" style="width: 60px;">
+                    </td>
+                    <td>$15.00</td>
+                    <td>
+                        <button class="button">Eliminar</button>
+                    </td>
+                </tr>
+                <!-- Agrega más productos según sea necesario -->
+            </tbody>
+        </table>
+
+        <h2>Resumen de Pago</h2>
+        <p><strong>Subtotal:</strong> $35.00</p>
+        <p><strong>Impuestos (10%):</strong> $3.50</p>
+        <p class="total"><strong>Total:</strong> $38.50</p>
+
+        <h2>Métodos de Pago</h2>
+        <button class="button">Pagar con PayPal</button>
+        <button class="button">Pagar con Tarjeta de Crédito</button>
+
+    </main>
+
+    <footer>
+        <p>&copy; [Año Actual] [Nombre de la Tienda]. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
